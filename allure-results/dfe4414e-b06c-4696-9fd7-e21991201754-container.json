@@ -1,0 +1,1 @@
+{"uuid":"dfe4414e-b06c-4696-9fd7-e21991201754","name":"com.testapp.apitests.UpdateUserTest","children":["08e05ce9-2f42-455c-b9aa-29aa4a5bdc50"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1614318926187,"stop":1614318926187}],"afters":[],"links":[],"start":1614318924688,"stop":1614318929455}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3232" started-at="2021-02-27T17:56:35 PST" finished-at="2021-02-27T17:56:38 PST">
+    <groups>
+    </groups>
+    <test name="ApiRestAssuredTests" duration-ms="3232" started-at="2021-02-27T17:56:35 PST" finished-at="2021-02-27T17:56:38 PST">
+      <class name="com.testapp.apitests.UpdateUserTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.testapp.apitests.UpdateUserTest@15a04efb]" name="init" is-config="true" duration-ms="1" started-at="2021-02-27T17:56:36 PST" finished-at="2021-02-27T17:56:36 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="userUpdateTest()[pri:0, instance:com.testapp.apitests.UpdateUserTest@15a04efb]" name="userUpdateTest" duration-ms="1329" started-at="2021-02-27T17:56:36 PST" description="Api to test the user update" finished-at="2021-02-27T17:56:37 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userUpdateTest -->
+      </class> <!-- com.testapp.apitests.UpdateUserTest -->
+      <class name="com.testapp.apitests.DeleteUserTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.testapp.apitests.DeleteUserTest@2bec854f]" name="init" is-config="true" duration-ms="0" started-at="2021-02-27T17:56:37 PST" finished-at="2021-02-27T17:56:37 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="deleteUser()[pri:0, instance:com.testapp.apitests.DeleteUserTest@2bec854f]" name="deleteUser" duration-ms="334" started-at="2021-02-27T17:56:37 PST" description="Api to delete user" finished-at="2021-02-27T17:56:38 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- com.testapp.apitests.DeleteUserTest -->
+      <class name="com.testapp.apitests.GetUsersTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.testapp.apitests.GetUsersTest@1890516e]" name="init" is-config="true" duration-ms="54" started-at="2021-02-27T17:56:35 PST" finished-at="2021-02-27T17:56:35 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testGetUsers()[pri:0, instance:com.testapp.apitests.GetUsersTest@1890516e]" name="testGetUsers" duration-ms="1146" started-at="2021-02-27T17:56:35 PST" description="Test api to get all the users" finished-at="2021-02-27T17:56:36 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsers -->
+      </class> <!-- com.testapp.apitests.GetUsersTest -->
+      <class name="com.testapp.apitests.GetUserByIdTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.testapp.apitests.GetUserByIdTest@16c069df]" name="init" is-config="true" duration-ms="1" started-at="2021-02-27T17:56:37 PST" finished-at="2021-02-27T17:56:37 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testGetAUser()[pri:0, instance:com.testapp.apitests.GetUserByIdTest@16c069df]" name="testGetAUser" duration-ms="302" started-at="2021-02-27T17:56:37 PST" description="Api to test get user" finished-at="2021-02-27T17:56:37 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAUser -->
+      </class> <!-- com.testapp.apitests.GetUserByIdTest -->
+    </test> <!-- ApiRestAssuredTests -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -18,7 +18,7 @@ public class ReadExcel {
 
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream(PropertyManager.getInstance().getString("test_data"));
+			fis = new FileInputStream(System.getProperty("user.dir")+PropertyManager.getInstance().getString("test_data"));
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -34,14 +34,13 @@ public class ReadExcel {
 			e.printStackTrace();
 		}
 		sheet = book.getSheet(sheetName);
-		Object[][] testData = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+		Object[][] testData = new Object[sheet.getLastRowNum()+1][sheet.getRow(0).getLastCellNum()];
+		for (int i = 0; i <= sheet.getLastRowNum(); i++) {
 			for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++) {
 				if ((sheet.getRow(i).getCell(j)) != null) {
 					testData[i][j] = sheet.getRow(i).getCell(j).toString();
 				}
 			}
-
 		}
 		return testData;
 	}

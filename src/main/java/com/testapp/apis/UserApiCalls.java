@@ -57,10 +57,10 @@ public class UserApiCalls {
 		
 		Object[][] userDetails = ReadExcel.readExcelData("user_data");
 		User user = new User();
-		user.setName(userDetails[0][0].toString());
-		user.setUsername(userDetails[0][1].toString());
-		user.setEmail(userDetails[0][2].toString());
-		user.setPhone(userDetails[0][3].toString());
+		user.setName(userDetails[1][0].toString());
+		user.setUsername(userDetails[1][1].toString());
+		user.setEmail(userDetails[1][2].toString());
+		user.setPhone(userDetails[1][3].toString());
 		Response resp = RestAssured.given().log().all().contentType(ContentType.JSON).pathParam("id", id).when()
 				.body(user).patch(APIEndpoints.UPDATE_USER).andReturn();
 		testAssert.verifyStatusCode(resp.getStatusCode(), HttpStatus.SC_OK);

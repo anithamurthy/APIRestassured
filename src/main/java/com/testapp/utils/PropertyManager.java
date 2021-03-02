@@ -11,10 +11,9 @@ public class PropertyManager {
 	private static PropertyManager manager;
 
 	private PropertyManager() {
-
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("resources/config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"/resources/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
